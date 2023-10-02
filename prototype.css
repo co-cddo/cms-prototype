@@ -1,0 +1,16 @@
+
+/* THESE IS A CUSTOM STYLESHEET FOR THIS PROTOTYPE */
+
+/* Styles for the accordian titles and summary text */
+
+.js-enabled .govuk-accordion__section-button {
+    text-decoration: none;;
+}
+
+.accordian-section_nocontent .govuk-accordion__section-toggle {
+    display: none;
+}
+
+.govuk-accordion__section-heading-text {
+    font-family: 'Lato';
+}
