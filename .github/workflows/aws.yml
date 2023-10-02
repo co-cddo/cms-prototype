@@ -1,0 +1,51 @@
+on:
+  workflow_dispatch:
+   inputs:
+      version:
+        type: string
+        required: true
+        description: version
+        default: latest
+env:
+  AWS_REGION : "eu-west-2"
+  ECR_REPOSITORY: dm-tests
+permissions:
+      id-token: write
+      contents: read
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the input tag to STDOUT
+        run: echo  The tags are ${{ github.event.inputs.name }}, ${{ github.event.inputs.version }} , ${{ github.event.inputs.env }}  
+      - name: Git clone the repository
+        uses: actions/checkout@v3
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1.7.0
+        with:
+          role-to-assume: arn:aws:iam::855859226163:role/eks-deployer-role
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
+          aws-region: ${{ env.AWS_REGION }}
+      - name: Sts GetCallerIdentity
+        run: |
+          aws sts get-caller-identity
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+        with:
+          mask-password: 'true'
+      - name: Build, tag, and push image to Amazon ECR
+        id: build-image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          # Build a docker container and
+          # push it to ECR so that it can
+          # be deployed to ECS.
+          IMAGE_TAG=$(cat package.json | jq -r '.version')
+          ECR_REPOSITORY=$(cat package.json | jq -r '.imagename')
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
+          
