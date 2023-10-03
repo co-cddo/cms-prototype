@@ -8,10 +8,10 @@ const app = express();
 app.get('/', (req, res) => {
 
 	if(process.env.NODE_ENV=='production')
-		res.send('You need to provide super secret password!')
+		res.send('2 You need to provide super secret password!')
 	else
 	// Sending the response
-		res.send('Hello CDDO CMS prototype work!')
+		res.send('2 Hello CDDO CMS prototype work!')
 	// Ending the response
 	res.end()
 })
