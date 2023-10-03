@@ -3,3 +3,7 @@ Prototype development of content management system for the Government Digital an
 
 Use this prototype during user research
  sessions.
+
+### Clone the repository
+### npm ini
+ 
