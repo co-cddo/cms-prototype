@@ -571,4 +571,577 @@
 
 </body>
 
+<!DOCTYPE html>
+<html lang="en" class="govuk-template">
+
+<head>
+
+    <!-- 
+    ALL PAGE METADATA, 
+    CSS STYLESHEETS
+    AND JAVASCRIPT FILES
+    ARE LINKED FROM WITHIN THE HEAD SECTION. 
+    EVERYTHING IN THE HEAD SECTION
+    SHOULD BE THE SAME
+    FOR ALL FILES
+    IN THIS PROTOTYPE
+    -->
+    <meta charset="utf-8">
+
+    <title>Landing page | Prototype</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Icons and favicons for browsers to read -->
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/govuk-frontend/govuk/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="mask-icon" href="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/govuk-frontend/govuk/assets/images/govuk-mask-icon.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" href="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+
+    <!--[if !IE 8]><!-->
+    <link href="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/css/gcs/main.css" rel="stylesheet">
+    <!--<![endif]-->
+
+    <!--[if IE 8]>
+    <link href="/govuk-frontend/all-ie8.css" rel="stylesheet">
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="/html5-shiv/html5shiv.js"></script>
+    <![endif]-->
+
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+    <!-- These are the css stylesheets that came with the CGS Wordpresthemes and templates -->
+    <link rel='stylesheet' id='gutenberg-notice-block-editor-css' href='https://gcs.civilservice.gov.uk/wp-content/plugins/co-custom-blocks/block.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='co-cookie-consent-css' href='https://gcs.civilservice.gov.uk/wp-content/plugins/cookie-consent-wp-master/public/css/co-cookie-consent-public.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='gcs-feedback-css' href='https://gcs.civilservice.gov.uk/wp-content/plugins/gcs-feedback/public/css/gcs-feedback-public.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='passster-public-css' href='https://gcs.civilservice.gov.uk/wp-content/plugins/content-protector/assets/public/passster-public.min.css' type='text/css' media='all' />
+    
+    <!-- These are the stylesheets from GOV.UK Frontend -->
+    <link rel="stylesheet" href="https://www.gov.uk/assets/government-frontend/application-69444c2a5992e63a240591f95e639f8fe1df50eb9a60889da2152ed8bba45d82.css" media="all">
+    <link rel="stylesheet" href="https://www.gov.uk/assets/government-frontend/views/_service_manual_guide-fa5e29ae2e0aecefe51466121a79bda12f27eff270d8b36c130f45a5a4d5cbb9.css">
+    <link rel="stylesheet" href="https://www.gov.uk/assets/government-frontend/govuk_publishing_components/components/_accordion-cb2b2d7321f61bd18d646a3d2b19ab63f6d2d22ddd59a9acdddddb0d49482744.css">
+    <link rel="stylesheet" href="https://www.gov.uk/assets/government-frontend/govuk_publishing_components/components/_subscription-links-5eb8208f164d09f00df0475473e41924213aa75d11f4587538badaf756e1e892.css">
+    <link rel="stylesheet" href="https://www.gov.uk/assets/government-frontend/govuk_publishing_components/components/_phase-banner-e77b304bc3e6f26ff7907f802dd4866c516c91922ddc4de5fc2ca751541f6975.css">
+
+    <!-- Customer stylesheet for this prototype --> 
+    <link rel="stylesheet" href="/public/css/prototype.css">
+
+    <!-- These are the javascript files from GOV.UK Frontend -->
+    <script src="https://www.gov.uk/assets/static/govuk_publishing_components/vendor/lux/lux-measurer-505eef3e243b1d08ea7c4b945ebe1ae146d896db61366e415b30cc1bcd84cbdc.js" async="async"></script>
+    <script src="https://www.gov.uk/assets/static/govuk_publishing_components/rum-loader-c53469dcb841d7b228c914a2e8bdcf3b831a578adf7d4f21cf9da5b85df7381e.js" async="async" data-lux-reporter-script="https://www.gov.uk/assets/static/govuk_publishing_components/vendor/lux/lux-reporter-f26d501656192bf6bef86a1d68bd8abd087ff03ade2ddbfa4a8c0420a6204cc8.js"></script>  
+
+    <!-- These are the javascript files that came with the CGS Wordpresthemes and templates -->
+    <script type='text/javascript' src='https://gcs.civilservice.gov.uk/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+    <script type='text/javascript' src='https://gcs.civilservice.gov.uk/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+    <script type='text/javascript' src='https://gcs.civilservice.gov.uk/wp-content/plugins/cookie-consent-wp-master/public/js/co-cookie-consent-public.js' id='co-cookie-consent-js'></script>
+    <script type='text/javascript' src='https://gcs.civilservice.gov.uk/wp-content/plugins/gcs-feedback/public/js/gcs-feedback-public.js' id='gcs-feedback-js'></script>
+    <script type='text/javascript' src='https://gcs.civilservice.gov.uk/wp-content/plugins/content-protector/assets/public/cookie.js' id='passster-cookie-js'></script>
+    
+    <script type='text/javascript' id='passster-public-js-extra'>
+        /* <![CDATA[ */
+        var ps_ajax = { "ajax_url": "https:\/\/gcs.civilservice.gov.uk\/wp-admin\/admin-ajax.php", "nonce": "5218c7169a", "hash_nonce": "342a413593", "logout_nonce": "0f055aaffa", "post_id": "32", "shortcodes": [], "permalink": "https:\/\/gcs.civilservice.gov.uk\/academy\/", "cookie_duration_unit": "days", "cookie_duration": "2", "disable_cookie": "", "unlock_mode": "1" };
+        /* ]]> */
+    </script>
+
+    <script type='text/javascript' src='https://gcs.civilservice.gov.uk/wp-content/plugins/content-protector/assets/public/passster-public.min.js' id='passster-public-js'></script>
+    <link rel="alternate" type="application/json+oembed" href="https://gcs.civilservice.gov.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgcs.civilservice.gov.uk%2Facademy%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://gcs.civilservice.gov.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgcs.civilservice.gov.uk%2Facademy%2F&#038;format=xml" />
+    
+</head>
+
+<body class="govuk-template__body govuk-body">
+
+    <script>
+        document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
+
+    <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+    <header data-module="govuk-header">
+
+        <!-- BETA BANNER-->
+        <div class="govuk-width-container">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                    <div class="gem-c-phase-banner govuk-phase-banner" data-ga4-phase-banner="beta" data-module="ga4-link-tracker" data-ga4-track-links-only="" data-ga4-set-indexes="" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;phase banner&quot;,&quot;section&quot;:&quot;Contact the Service Manual team if you have feedback, questions or suggestions.\n\n&quot;,&quot;index_total&quot;:1}" data-ga4-link-tracker-module-started="true">
+                        <p class="govuk-phase-banner__content">
+                            <strong class="govuk-tag govuk-phase-banner__content__tag">PROTOTYPE</strong>
+                            <span class="govuk-phase-banner__text">  <a class="govuk-link" href="#" data-ga4-index="{&quot;index_link&quot;: 1}">Contact the TGS team</a> if you have feedback, questions or suggestions.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="govuk-header">
+
+            <div class="govuk-header__container govuk-width-container">
+
+                <!-- Logo -->
+                <div class="govuk-header__logo connect-header--logo">
+
+                    <div class="gcs-header--logo">
+                        <a href="#">
+                            <!-- include the Government Digital and Data logo here when ready -->
+                            <!-- Removed the GCS logo
+                                <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/img/gcs_white_landscape.png"
+                                alt="Government Communication Service" /> -->
+                            <p style="text-decoration: underline; color:#fff; font-size: 1.5em; font-weight: bold; margin: 5px 0px;">Government Digital and Data</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Search and menu button -->
+                <div class="govuk-header__content gcs-header--search">
+
+                    <!-- Menu button for mobile devices -->
+                    <button type="button" class="govuk-header__menu-button govuk-js-header-toggle"
+                        aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu
+                    </button>
+
+                    <!-- Search form -->
+                    <form action="https://gcs.civilservice.gov.uk/" method="get" role="search">
+                        <div class="gem-c-search" data-module="gem-toggle-input-class-on-focus">
+                            <label for="search-form-1" class="gem-c-search__label">Search</label>
+                            <div class="gem-c-search__item-wrapper">
+                                <input type="search" value="" id="search-form-1" name="s" title="Search" class="gem-c-search__item gem-c-search__input js-class-toggle">
+                                <div class="gem-c-search__item gem-c-search__submit-wrapper">
+                                    <button type="submit" class="gem-c-search__submit">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Main navigation -->
+        <nav id="navigation-wrapper">
+
+            <div class="govuk-width-container gcs-header--nav">
+
+                <ul id="navigation" class="govuk-header__navigation-list gcs-header--navigation"
+                    aria-label="Main navigation">
+
+                    <li id="menu-item-11504"
+                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-32 current_page_item menu-item-11501 govuk-header__navigation-item">
+                        <a href="service-delivery.html" class="govuk-header__link"><span class="inner-link" tabindex="-1">Service delivery</span></a>
+                    </li>
+                    <li id="menu-item-11501"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11503 govuk-header__navigation-item">
+                        <a href="#" aria-current="page" class="govuk-header__link"><span class="inner-link" tabindex="-1">Managing data</span></a>
+                    </li>
+                    <li id="menu-item-11503"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11503 govuk-header__navigation-item">
+                        <a href="#" class="govuk-header__link"><span class="inner-link" tabindex="-1">Working with technology</span></a>
+                    </li>
+                    <li id="menu-item-11500"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11500 govuk-header__navigation-item">
+                        <a href="#" class="govuk-header__link"><span class="inner-link" tabindex="-1">Building capability</span></a>
+                    </li>
+                    <li id="menu-item-11505"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11505 govuk-header__navigation-item">
+                        <a href="#ß" class="govuk-header__link"><span class="inner-link" tabindex="-1">Digital enablement</span></a>
+                    </li>
+
+                    <!-- Removed the extra mobile GCS sign in link
+                    <div class="gcs--mobile-only">
+                        <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page govuk-header__navigation-item">
+                            <a href="/login-gcs-connect" class="govuk-header__link">Sign in with GCS Connect</a>
+                        </li>
+                    </div> -->
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div class="gcs-section-home gcs-section-home--standard">
+
+        <!-- MAIN HERO BANNER AND PAGE TITLE -->
+
+        <div class="shading gcs-hero--wrapper" style="background: linear-gradient(90deg, rgb(0, 48, 120) 20%, rgb(29, 112, 184) 100%);">
+            <!--<div class="gcs-hero--wrapper">-->
+            <div class="govuk-width-container">
+                <div class="govuk-grid-row">
+
+                    <div class="govuk-grid-column-two-thirds gcs-hero--txt-wrapper">
+                        <div class="gcs-hero--txt">
+                            <h1 class="govuk-heading-xl">(Landing page) - Prototype</h1>
+                            <p class="govuk-body-l">Helping teams to create, transform and run great public services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Removed the breadcrumbs, for now
+        <div class="gcs-breadcrumbs">
+            <div class="govuk-header__container govuk-width-container">
+                <div class="govuk-breadcrumbs">
+                    <ol class="govuk-breadcrumbs__list">
+                        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link"
+                                href="https://gcs.civilservice.gov.uk/">Home</a></li>
+                        <li class="govuk-breadcrumbs__list-item" aria-current="page">Academy</li>
+                    </ol>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- MAIN PAGE CONTENT START HERE--> 
+
+        <main class="govuk-main-wrapper" id="main-content" role="main">
+
+            <div class="govuk-width-container">
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-two-thirds">
+                        <h2 class="govuk-heading-l first-on-page" style="margin: 0 0 2rem;">Approaches to transformation and delivery</h2>
+                    </div>
+                </div>
+
+                <div class="govuk-grid-row">
+
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="types-of-services.html">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Types of services <span style="color:red">(Move to govenance, this is currently about how standards apply)</span></h3>
+                                    <p>You should adapt DDaT standards and assurance to the type of service you are delivering.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Delivering new services</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Large scale transformation projects</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Making incremental improvements to existing services</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Working across channels</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+            <br/>
+
+
+            <div class="govuk-width-container">
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-two-thirds">
+                        <h2 class="govuk-heading-l first-on-page" style="margin: 0 0 2rem;">Team organisation and governance</h2>
+                    </div>
+                </div>
+
+                <div class="govuk-grid-row">
+
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Service ownership</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Setting up multifunctional teams</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Service and product governance</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+            <br/>
+
+
+            <div class="govuk-width-container">
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-two-thirds">
+                        <h2 class="govuk-heading-l first-on-page" style="margin: 0 0 2rem;">Delivery menthodology and practices</h2>
+                    </div>
+                </div>
+
+                <div class="govuk-grid-row">
+
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Agile operating models</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">User centred design</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Creating a digital frontend</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Accessibility and inclusion</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Collecting personal information from users</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Service lifecycle</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+            <br/>
+
+            <div class="govuk-width-container">
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-two-thirds">
+                        <h2 class="govuk-heading-l first-on-page" style="margin: 0 0 2rem;">Performance measurement and tracking</h2>
+                    </div>
+                </div>
+
+                <div class="govuk-grid-row">
+
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Assurance</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Performance frameworks</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Tracking performance data</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+            <br/>
+
+            <div class="govuk-width-container">
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-two-thirds">
+                        <h2 class="govuk-heading-l first-on-page" style="margin: 0 0 2rem;">Support available from the centre</h2>
+                    </div>
+                </div>
+
+                <div class="govuk-grid-row">
+
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Problem triage</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third-from-desktop">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">Direct support with delivery</h3>
+                                    <p>Summary of content, products and services goes here.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- 
+    FOOTER 
+    THIS SHOULD BE
+    THE SAME 
+    ACROSS ALL FILES
+    -->
+    
+    <footer class="govuk-footer gcs-footer">
+        <div class="govuk-width-container ">
+            <div class="govuk-footer__meta">
+                <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+                    <a href="#" class="gcs-footer--social-link"><img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/twitter.svg" alt="GCS - Twitter" class="gcs-footer--social-icon" /></a>
+                    <a href="#" class="gcs-footer--social-link"><img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/linkedin.svg" alt="GCS - LinkedIn" class="gcs-footer--social-icon" /></a>
+
+                    <h2 class="govuk-visually-hidden">Support links</h2>
+
+                    <ul class="govuk-footer__inline-list">
+                        <li id="menu-item-8807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8807 govuk-footer__inline-list-item"><a href="#" class="govuk-footer__link">News</a></li>
+                        <li id="menu-item-12157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12157 govuk-footer__inline-list-item"><a href="#" class="govuk-footer__link">Blog</a></li>
+                        <li id="menu-item-12158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12158 govuk-footer__inline-list-item"><a href="#" class="govuk-footer__link">Courses</a></li>
+                        <li id="menu-item-8809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8809 govuk-footer__inline-list-item"><a href="#" class="govuk-footer__link">Publications</a></li>
+                        <li id="menu-item-8808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8808 govuk-footer__inline-list-item"><a href="#" class="govuk-footer__link">Podcasts</a></li>
+                        <li id="menu-item-8806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8806 govuk-footer__inline-list-item"><a href="#" class="govuk-footer__link">Webinars</a></li>
+                    </ul>
+
+                    <ul class="govuk-footer__inline-list">
+                        <li id="menu-item-8802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8802 govuk-footer__inline-list-item"><a href="#" class="govuk-footer__link">Accessibility statement</a></li>
+                        <li id="menu-item-8805" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8805 govuk-footer__inline-list-item"><a href="#" class="govuk-footer__link">Privacy notice</a></li>
+                        <li id="menu-item-8804" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8804 govuk-footer__inline-list-item"><a href="#" class="govuk-footer__link">Cookies notice</a></li>
+                        <li id="menu-item-18487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18487 govuk-footer__inline-list-item"><a href="#" class="govuk-footer__link">Cookie Preference Centre</a></li>
+                        <li id="menu-item-8803" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8803 govuk-footer__inline-list-item"><a href="#" class="govuk-footer__link">Contact us</a></li>
+                    </ul>
+
+                    <svg role="presentation" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 483.2 195.7" height="17" width="41">
+                        <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
+                    </svg>
+                    <span class="govuk-footer__licence-description">All content is available under the
+                        <a class="govuk-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+                    </span>
+                </div>
+
+                <div class="govuk-footer__meta-item">
+                    <a class="govuk-footer__link govuk-footer__copyright-logo" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
+                </div>
+
+            </div>
+        </div><!-- End of govuk-width-container-->
+    </footer>
+
+    <script src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/govuk-frontend/govuk/all.js"></script>
+    <script>
+        window.GOVUKFrontend.initAll()
+    </script>
+
+    <!-- <script src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/js/back-to-top.js"></script> -->
+
+    <script type="text/javascript">setupCookieChoices();</script>
+
+    <!-- FROM SERVICE MANUAL -->
+    <script src="https://www.gov.uk/assets/static/application-3730ac8a122f0710f346b1322c95acebd3194f331dc77aced7b5f7dad6ca2a2a.js"></script>
+    <script src="https://www.gov.uk/assets/government-frontend/application-c59af3650ae48473904c324926525f6da26f6a9d3011d712f378016b8145ba0e.js"></script>
+    <script type="application/ld+json"></script>
+
+    <!-- JQuery and other JS -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+    <script src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/js/toggle-link.js"></script>
+    <script src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/js/hide-search-label.js"></script>
+
+</body>
+
 </html>
