@@ -3,6 +3,57 @@
 
 {% include "layouts/head.html" %}
 
+<style>
+    body {
+      margin: 40px;
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-gap: 10px;
+        /* grid-template-columns: 100px 100px 100px; */
+        background-color: #fff;
+        color: #444;
+      }
+    
+      .box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+    
+      }
+    
+      .a {
+        grid-column: 1 / span 3;
+      }
+      .b {
+        grid-column: 4 ;
+        grid-row: 1 / span 4;
+      }
+      .c {
+        grid-column: 1 ;
+        grid-row: 2 ;
+      }
+      .d {
+        grid-column: 2 ;
+        grid-row: 2 ;
+      }
+      .e {
+        grid-column: 3 ;
+        grid-row: 2 ;
+      }
+      .f {
+        grid-column: 1 / span 3 ;
+        grid-row: 3 ;
+      }
+      .g {
+        grid-column: 1 / span 3 ;
+        grid-row: 4 ;
+      }
+    
+</style>
 <body class="govuk-template__body govuk-body">
 
     {% include "layouts/header.html" %}
@@ -32,11 +83,19 @@
         <main class="govuk-main-wrapper" id="main-content" role="main">
 
             <div class="govuk-width-container">
-                <div class="govuk-grid-row">
-                    <div class="govuk-grid-column-two-thirds">
-                        <h2 class="govuk-heading-l first-on-page" style="margin: 0 0 2rem;">(heading to be removed) (layout below will change) </h2>
-                    </div>
+                
+
+                <div class="wrapper">
+                    <div class="box a">A</div>
+                    <div class="box b">B</div>
+                    <div class="box c">C</div>
+                    <div class="box d">D</div>
+                    <div class="box e">E</div>
+                    <div class="box f">F</div>
+                    <div class="box g">G</div>
+                    
                 </div>
+         
 
                 <div class="govuk-grid-row">
 
