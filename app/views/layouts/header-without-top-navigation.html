@@ -1,0 +1,125 @@
+<script>
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+</script>
+
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+<header data-module="govuk-header">
+
+    <!-- BETA BANNER-->
+    <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <div class="gem-c-phase-banner govuk-phase-banner" data-ga4-phase-banner="beta" data-module="ga4-link-tracker" data-ga4-track-links-only="" data-ga4-set-indexes="" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;phase banner&quot;,&quot;section&quot;:&quot;Contact the Service Manual team if you have feedback, questions or suggestions.\n\n&quot;,&quot;index_total&quot;:1}" data-ga4-link-tracker-module-started="true">
+                    <p class="govuk-phase-banner__content">
+                        <strong class="govuk-tag govuk-phase-banner__content__tag">PROTOTYPE 2</strong>
+                        <span class="govuk-phase-banner__text">  <a class="govuk-link" href="#" data-ga4-index="{&quot;index_link&quot;: 1}">Contact the TGS team</a> if you have feedback, questions or suggestions.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="govuk-header">
+
+        <div class="govuk-header__container govuk-width-container">
+
+            <!-- Logo -->
+            <div class="govuk-header__logo connect-header--logo">
+                <div class="gcs-header--logo">
+                    <a href="index.html">
+                            <img src="/public/images/GDaT_WHITE_LANDSCP_AW.png"
+                            alt="Government Digital and Data" />
+                        <!-- removing below line for now 
+                        <p style="text-decoration: underline; color:#fff; font-size: 1.5em; font-weight: bold; margin: 5px 0px;">Government Digital and Data</p>
+                        -->
+                    </a>
+                </div>
+            </div>
+
+            <!-- Search and menu button -->
+            <div class="govuk-header__content gcs-header--search">
+
+                <!-- Menu button for mobile devices -->
+                <button type="button" class="govuk-header__menu-button govuk-js-header-toggle"
+                    aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu
+                </button>
+
+                <!-- Search form -->
+                <form action="https://gcs.civilservice.gov.uk/" method="get" role="search">
+                    <div class="gem-c-search" data-module="gem-toggle-input-class-on-focus">
+                        <label for="search-form-1" class="gem-c-search__label">Search</label>
+                        <div class="gem-c-search__item-wrapper">
+                            <input type="search" value="" id="search-form-1" name="s" title="Search" class="gem-c-search__item gem-c-search__input js-class-toggle">
+                            <div class="gem-c-search__item gem-c-search__submit-wrapper">
+                                <button type="submit" class="gem-c-search__submit">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Main navigation -->
+    <!--
+    <nav id="navigation-wrapper">
+
+        <div class="govuk-width-container gcs-header--nav">
+
+            <ul id="navigation" class="govuk-header__navigation-list gcs-header--navigation"
+                aria-label="Main navigation">
+
+                <!-- commented out otherwise the first menu item is always showing as the current page 
+                <li id="menu-item-11504"
+                    class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-32 current_page_item menu-item-11501 govuk-header__navigation-item">
+                    <a href="service-delivery.html" class="govuk-header__link"><span class="inner-link" tabindex="-1">Service delivery</span></a>
+                </li>
+                -->
+    <!--
+                <li id="menu-item-11500"
+                    class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-32 menu-item-11500 govuk-header__navigation-item">
+                    <a href="service-delivery.html" class="govuk-header__link"><span class="inner-link" tabindex="-1">Service delivery</span></a>
+                </li>
+                <li id="menu-item-11501"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11501 govuk-header__navigation-item">
+                    <a href="#" class="govuk-header__link"><span class="inner-link" tabindex="-1">Working with technology</span></a>
+                </li>
+                <li id="menu-item-11502"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11502 govuk-header__navigation-item">
+                    <a href="data.html" aria-current="page" class="govuk-header__link"><span class="inner-link" tabindex="-1">Managing data</span></a>
+                </li>
+                <li id="menu-item-11503"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11503 govuk-header__navigation-item">
+                    <a href="#" class="govuk-header__link"><span class="inner-link" tabindex="-1">Building capability</span></a>
+                </li>
+                <li id="menu-item-11504"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11504 govuk-header__navigation-item">
+                    <a href="#" class="govuk-header__link"><span class="inner-link" tabindex="-1">Service Assurance</span></a>
+                </li>
+                <li id="menu-item-11505"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11505 govuk-header__navigation-item">
+                    <a href="#" class="govuk-header__link"><span class="inner-link" tabindex="-1">Digital enablement</span></a>
+                </li>
+                <li id="menu-item-11506"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11506 govuk-header__navigation-item">
+                    <a href="#" class="govuk-header__link"><span class="inner-link" tabindex="-1">Communications and Community</span></a>
+                </li>
+
+                <!-- Removed the extra mobile GCS sign in link
+                <div class="gcs--mobile-only">
+                    <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page govuk-header__navigation-item">
+                        <a href="/login-gcs-connect" class="govuk-header__link">Sign in with GCS Connect</a>
+                    </li>
+                </div> -->
+    <!--
+            </ul>
+
+        </div>
+
+    </nav>
+    -->
+
+</header>
