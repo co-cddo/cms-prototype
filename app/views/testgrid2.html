@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template">
 
-{% include "layouts/head.html" %}
+<!-- {% include "layouts/head.html" %} -->
 
 <style>
     body {
@@ -30,33 +30,38 @@
       }
       .b {
         grid-column: 4 ;
-        grid-row: 1 / span 4;
+        grid-row: 1 / span 5;
       }
       .c {
-        grid-column: 1 ;
+        grid-column: 1 / span 3 ;
         grid-row: 2 ;
       }
       .d {
-        grid-column: 2 ;
-        grid-row: 2 ;
+        grid-column: 1 ;
+        grid-row: 3 ;
       }
       .e {
-        grid-column: 3 ;
-        grid-row: 2 ;
+        grid-column: 2 ;
+        grid-row: 3 ;
       }
       .f {
-        grid-column: 1 / span 3 ;
+        grid-column: 3  ;
         grid-row: 3 ;
       }
       .g {
         grid-column: 1 / span 3 ;
         grid-row: 4 ;
       }
+      .h {
+        grid-column: 1 / span 3 ;
+        grid-row: 5 ;
+      }
     
 </style>
 <body class="govuk-template__body govuk-body">
 
-    {% include "layouts/header.html" %}
+  <!--  {% include "layouts/header.html" %} -->
+
 
     <div class="gcs-section-home gcs-section-home--standard">
 
@@ -65,7 +70,7 @@
 <!--        <div class="shading gcs-hero--wrapper" style="background: linear-gradient(90deg, rgb(0, 48, 120) 20%, rgb(29, 112, 184) 100%);"> -->
             <div class="shading gcs-hero--wrapper" style="background: white;">
             <!--<div class="gcs-hero--wrapper">-->
-            <div class="govuk-width-container">
+           <div class="govuk-width-container">
                 <div class="govuk-grid-row">
 
                     <div class="govuk-grid-column-two-thirds gcs-hero--txt-wrapper">
@@ -77,6 +82,8 @@
                 </div>
             </div>
         </div>
+
+    
 
         <!-- MAIN PAGE CONTENT START HERE--> 
 
@@ -90,7 +97,7 @@
                         <a href="#">
                             <div class="gcs-section-home--block">
                                 <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
-                                    <h3 class="govuk-heading-s">Service delivery</h3>
+                                    <h3 class="govuk-heading-s">box a</h3>
                                     <!-- <p>(Summary here?)</p> -->
                                 </div>
                             </div>
@@ -100,7 +107,7 @@
                         <a href="#">
                             <div class="gcs-section-home--block">
                                 <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
-                                    <h3 class="govuk-heading-s">Comms and Community</h3>
+                                    <h3 class="govuk-heading-s">box b</h3>
                                     <!-- <p>(Summary here?)</p> -->
                                 </div>
                             </div>
@@ -110,7 +117,7 @@
                         <a href="#">
                             <div class="gcs-section-home--block">
                                 <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
-                                    <h3 class="govuk-heading-s">Working with technology</h3>
+                                    <h3 class="govuk-heading-s">box c</h3>
                                     <!-- <p>(Summary here?)</p> -->
                                 </div>
                             </div>
@@ -120,7 +127,7 @@
                         <a href="#">
                             <div class="gcs-section-home--block">
                                 <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
-                                    <h3 class="govuk-heading-s">Managing data</h3>
+                                    <h3 class="govuk-heading-s">box d</h3>
                                     <!-- <p>(Summary here?)</p> -->
                                 </div>
                             </div>
@@ -130,7 +137,7 @@
                         <a href="#">
                             <div class="gcs-section-home--block">
                                 <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
-                                    <h3 class="govuk-heading-s">Building capability</h3>
+                                    <h3 class="govuk-heading-s">box e</h3>
                                     <!-- <p>(Summary here?)</p> -->
                                 </div>
                             </div>
@@ -140,7 +147,7 @@
                         <a href="#">
                             <div class="gcs-section-home--block">
                                 <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
-                                    <h3 class="govuk-heading-s">Service assurance</h3>
+                                    <h3 class="govuk-heading-s">box f</h3>
                                     <!-- <p>(Summary here?)</p> -->
                                 </div>
                             </div>
@@ -150,7 +157,17 @@
                         <a href="#">
                             <div class="gcs-section-home--block">
                                 <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
-                                    <h3 class="govuk-heading-s">Digital enablement</h3>
+                                    <h3 class="govuk-heading-s">box g</h3>
+                                    <!-- <p>(Summary here?)</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box h">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h3 class="govuk-heading-s">box h</h3>
                                     <!-- <p>(Summary here?)</p> -->
                                 </div>
                             </div>
