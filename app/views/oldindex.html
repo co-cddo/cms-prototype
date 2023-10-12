@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template">
+
+{% include "layouts/head.html" %}
+
+<style>
+    body {
+      margin: 40px;
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-gap: 0px;
+        /* grid-template-columns: 100px 100px 100px; */
+        /* background-color: #fff; */
+        color: #444;
+      }
+    
+      .box {
+        /* background-color: #444; */
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 150%;
+    
+      }
+    
+      .a {
+        grid-column: 1 / span 3;
+      }
+      .b {
+        grid-column: 4 ;
+        grid-row: 1 / span 5;
+      }
+      .c {
+        grid-column: 1 / span 3 ;
+        grid-row: 2 ;
+      }
+      .d {
+        grid-column: 1 ;
+        grid-row: 3 ;
+      }
+      .e {
+        grid-column: 2 ;
+        grid-row: 3 ;
+      }
+      .f {
+        grid-column: 3  ;
+        grid-row: 3 ;
+      }
+      .g {
+        grid-column: 1 / span 3 ;
+        grid-row: 4 ;
+      }
+      .h {
+        grid-column: 1 / span 3 ;
+        grid-row: 5 ;
+      }
+    
+</style>
+<body class="govuk-template__body govuk-body">
+
+    {% include "layouts/header-without-top-navigation.html" %}
+
+    <div class="gcs-section-home gcs-section-home--standard">
+
+        <!-- MAIN HERO BANNER AND PAGE TITLE -->
+
+        <div class="shading gcs-hero--wrapper" style="background: linear-gradient(90deg, rgb(0, 48, 120) 20%, rgb(29, 112, 184) 100%);"> 
+        <!-- <div class="gcs-hero--wrapper" style="background: #eee;"> -->
+            <div class="govuk-width-container">
+                <div class="govuk-grid-row">
+
+                    <div class="govuk-grid-column-two-thirds gcs-hero--txt-wrapper">
+                        <div class="gcs-hero--txt">
+                            <h1 class="govuk-heading-xl">Transforming government services</h1>
+                            <p>Helping teams to create, run and transform great public services</p>
+                            <div class="govuk-body-m">
+                                <p>Great digital services need great digital professionals.</p> 
+                                <p>The resources published here are designed to support people working on the digital transformation of public services.</p> 
+                                <p>Whether you are a beginner in your digital career or an established professional, there is something here to help you do a great job.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+
+        <!-- MAIN PAGE CONTENT START HERE--> 
+
+        <main class="govuk-main-wrapper" id="main-content" role="main">
+
+            <div class="govuk-width-container"> 
+                
+
+                <div class="wrapper">
+                    
+                    <div class="box a">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h1 class="govuk-heading-l">Transforming government services</h1>
+                                    <p>Helping teams to create, run and transform great public services</p>
+                                    <div class="govuk-body-m">
+                                        <p>Great digital services need great digital professionals.</p> 
+                                        <p>The resources published here are designed to support people working on the digital transformation of public services.</p> 
+                                        <p>Whether you are a beginner in your digital career or an established professional, there is something here to help you do a great job.</p>
+                                    </div> 
+                                    <h2 class="govuk-heading-m">About Government Digital and Data</h2>
+                                    <div class="govuk-body-s">
+                                        <p>The government’s Digital and Data (D and D) function is managed by the Central Digital and Data Office.</p>
+                                        <p>Its role is to: </p>
+                                        <ul>
+                                            <li>set the cross-government digital strategy and standards</li>
+                                            <li>manage digital and data performance</li>
+                                            <li>support delivery through assessments and controls</li>
+                                        </ul>
+                                    </div>
+                                    <h2 class="govuk-heading-m">About this site</h2>
+                                    <div class="govuk-body-s">
+                                        <p>All the content on this site is tailored for people working in digital. Resources include:</p>
+                                        <ul>
+                                            <li>best practice examples</li> 
+                                            <li>read reports, case studies, and best practices</li> 
+                                            <li>tools such as?</li>
+                                            <li>strategies and policies</li>
+                                            <li>innovations</li>
+                                        </ul>
+                                    </div>
+                                    <h2 class="govuk-heading-m">Join the community</h2>
+                                    <div class="govuk-body-s">
+                                        <p>This site will help you connect and collaborate with a community of digital practitioners. You can share your experiences and get involved in shaping the future of digital services.</p>
+                                    </div>
+        
+         
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box b">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h2 class="govuk-heading-m">Communications and Community</h2>
+                                    <!-- <p>(Summary here?)</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box c">
+                        <a href="service-delivery.html">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h2 class="govuk-heading-m">Service delivery</h2>
+                                    <!-- <p>(Summary here?)</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box d">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h2 class="govuk-heading-m">Working with technology</h2>
+                                    <!-- <p>(Summary here?)</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box e">
+                        <a href="data.html">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h2 class="govuk-heading-m">Managing data</h2>
+                                    <!-- <p>(Summary here?)</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box f">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h2 class="govuk-heading-m">Building capability</h2>
+                                    <!-- <p>(Summary here?)</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box g">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h2 class="govuk-heading-m">Service assurance</h2>
+                                    <!-- <p>(Summary here?)</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box h">
+                        <a href="#">
+                            <div class="gcs-section-home--block">
+                                <div class="gcs-section-home--block-inner"><!-- <img src="https://gcs.civilservice.gov.uk/wp-content/themes/gcs/assets/svg/right-arrow.svg" class="arrow" alt=" " /> -->
+                                    <h2 class="govuk-heading-m">Digital enablement</h2>
+                                    <!-- <p>(Summary here?)</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+         
+         
+                
+            </div>
+
+            <br/>
+            <br/>
+
+
+        </main>
+
+    </div>
+
+    {% include "layouts/footer.html" %}
+
+    {% include "layouts/footer-scripts.html" %}
+</body>
+
+</html>
