@@ -18,3 +18,7 @@
 a.cms-prototype-homepage-box {
     text-decoration: none;
 }
+
+a.cms-prototype-homepage-box h3 {
+    text-decoration: underline;
+}
