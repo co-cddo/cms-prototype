@@ -23,7 +23,7 @@ a.cms-prototype-homepage-box h3 {
     text-decoration: underline;
 }
 
-a.cms-prototype-homepage-box h3:hover {
+a.cms-prototype-homepage-box:hover h3 {
     text-decoration-thickness: 3px;
     color: #000;
 }
