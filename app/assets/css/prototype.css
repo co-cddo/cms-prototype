@@ -15,6 +15,6 @@
     font-family: 'Lato';
 }
 
-.cms-prototype-homepage-box a:any-link {
+a.cms-prototype-homepage-box {
     text-decoration: none;
 }
