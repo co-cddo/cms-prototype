@@ -4,7 +4,7 @@
 /* Styles for the accordian titles and summary text */
 
 .js-enabled .govuk-accordion__section-button {
-    text-decoration: none;;
+    text-decoration: none;
 }
 
 .accordian-section_nocontent .govuk-accordion__section-toggle {
@@ -13,4 +13,8 @@
 
 .govuk-accordion__section-heading-text {
     font-family: 'Lato';
+}
+
+.gcs-section-home--block a:any-link {
+    text-decoration: none;
 }
