@@ -22,3 +22,8 @@ a.cms-prototype-homepage-box {
 a.cms-prototype-homepage-box h3 {
     text-decoration: underline;
 }
+
+a:hover.cms-prototype-homepage-box {
+    text-decoration-thickness:max(3px, .1875rem, .12em);
+    color: #003078;
+}
