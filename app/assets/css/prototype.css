@@ -28,6 +28,6 @@ a.cms-prototype-homepage-box:hover h3 {
     color: #000;
 }
 
-.gcs-section-home--block-inner {
+.cms-prototype-homepage .gcs-section-home--block-inner {
     padding: 2em 2.25em;
 }
